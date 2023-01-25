@@ -6,5 +6,5 @@ Datafusion's whole mission in life is to create [RecordBatches](https://docs.rs/
 the impl ExecutionPlan for WhateverExec the **execute** method creates a SendableRecordBatchStream
 
 in other words :)   
-the Execs create the RecordBatches ie. [ValuesExec](https://docs.rs/datafusion/latest/datafusion/index.html#physical-plan)
+the Execs create the RecordBatches see  [List of Execs](https://docs.rs/datafusion/latest/datafusion/index.html#physical-plan)
 
