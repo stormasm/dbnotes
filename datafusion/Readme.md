@@ -13,11 +13,7 @@
 * [First Message](https://the-asf.slack.com/archives/C01QUFS30TD/p1615401105000200)
 
 
-The Execs create the ExecutionPlans and then 
-
-[collect](https://github.com/apache/arrow-datafusion/blob/master/datafusion/core/src/physical_plan/mod.rs) takes in the ExecutionPlan and returns a RecordBatch
-which is the final output of datafusion.   
-Datafusion's whole mission in life is to create [RecordBatches](https://docs.rs/arrow/latest/arrow/record_batch/struct.RecordBatch.html).
+The Execs create the ExecutionPlans and then [collect](https://github.com/apache/arrow-datafusion/blob/master/datafusion/core/src/physical_plan/mod.rs) takes in the ExecutionPlan and returns a RecordBatch which is the final output of datafusion. Datafusion's whole mission in life is to create [RecordBatches](https://docs.rs/arrow/latest/arrow/record_batch/struct.RecordBatch.html).
 
 the impl ExecutionPlan for WhateverExec the **execute** method creates a SendableRecordBatchStream
 
