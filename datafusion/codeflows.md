@@ -5,7 +5,7 @@ The [Execs](https://docs.rs/datafusion/latest/datafusion/index.html#physical-pla
 
 Datafusion's whole mission in life is to create [RecordBatches](https://docs.rs/arrow/latest/arrow/record_batch/struct.RecordBatch.html).
 
-the impl ExecutionPlan for WhateverExec the **execute** method creates a SendableRecordBatchStream
+with the impl ExecutionPlan for WhateverExec the **execute** method creates a SendableRecordBatchStream
 
 #### More tests that massage these Exec concepts
 
