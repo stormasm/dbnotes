@@ -1,7 +1,7 @@
 
 ### Physical Plan
 
-The Execs create the ExecutionPlans see  [List of Execs](https://docs.rs/datafusion/latest/datafusion/index.html#physical-plan)
+The Execs creates the [ExecutionPlans](https://github.com/apache/arrow-datafusion/blob/master/datafusion/core/src/physical_plan/mod.rs) see  [List of Execs](https://docs.rs/datafusion/latest/datafusion/index.html#physical-plan)
 and then those ExecutionPlans are used to create the RecordBatches via
 [collect](https://github.com/apache/arrow-datafusion/blob/master/datafusion/core/src/physical_plan/mod.rs) which takes in the ExecutionPlan and returns a RecordBatch which is the final output of datafusion. 
 
