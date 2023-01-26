@@ -1,6 +1,9 @@
 
 ### Code Flows
 
+* [LogicalPlans](https://github.com/stormasm/dbnotes/blob/main/datafusion/codeflows.md#logical-plan)
+* [PhysicalPlans](https://github.com/stormasm/dbnotes/blob/main/datafusion/codeflows.md#physical-plan)
+
 * [ExecutionPlans](./codeflows.md)
 
 ### Setup of Datafusion including testing
