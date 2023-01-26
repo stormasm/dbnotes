@@ -9,6 +9,6 @@ Datafusion's whole mission in life is to create [RecordBatches](https://docs.rs/
 
 the impl ExecutionPlan for WhateverExec the **execute** method creates a SendableRecordBatchStream
 
-##### More tests that massage these Exec concepts
+#### More tests that massage these Exec concepts
 
 [datasource/file_format/json.rs](https://github.com/apache/arrow-datafusion/blob/master/datafusion/core/src/datasource/file_format/json.rs)
