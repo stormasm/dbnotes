@@ -3,7 +3,7 @@
 ### Logical Plan
 
 a LogicalPlan gets created out of the sql.   
-a dataframe is a LogicalPlan
+a dataframe is a LogicalPlan with SessionState.
 
 create_physical_plan takes in a LogicalPlan
 
