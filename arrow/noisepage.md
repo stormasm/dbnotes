@@ -47,9 +47,9 @@ a block f , Filledf be the set of filled slots in f , and Filledf′ be the
 set of filled slots not in the first t mod s slots in f . 
 
 Then, for any valid selection of F , p, and E, [omit math equation from this description]
-because there are only t tuples in total. Therefore, an optimal movement is any one-to-one movement between...
+because there are only t tuples in total. Therefore, an optimal movement is any one-to-one movement between...g
 
-The algorithm constructs F by picking the 􏰀 st 􏰁 blocks with the most filled slots. Every gap in F needs to be filled with one movement, and our selection of F results in fewer movements than any other choice. In the worst case, our chosen p, which is the block with the next most filled slots, is empty in the first (t mods) slots. The optimal one is filled, resulting in at most (t mods) movements from the optimal for our algorithm. To achieve the optimal solution, the algorithm needs to scan through the blocks to find an optimal p by trying every possible candidate. From our experiments in Sec. 6, we observe only a marginal reduction in movements, which does not justify the overhead.
+The algorithm constructs F by picking the blocks with the most filled slots. Every gap in F needs to be filled with one movement, and our selection of F results in fewer movements than any other choice. In the worst case, our chosen p, which is the block with the next most filled slots, is empty in the first (t mods) slots. The optimal one is filled, resulting in at most (t mods) movements from the optimal for our algorithm. To achieve the optimal solution, the algorithm needs to scan through the blocks to find an optimal p by trying every possible candidate. From our experiments in Sec. 6, we observe only a marginal reduction in movements, which does not justify the overhead.
 
 ### 4.4 Additional Considerations
 
