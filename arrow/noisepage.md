@@ -39,14 +39,16 @@ After the transformation algorithm obtains exclusive access to the block, it sca
 
 Lastly, we describe how to shuffle tuples within a compaction group (Compact from Alg. 1); pseudo-code is given in Alg. 2. At the end of this routine, tuples in the group are logically contiguous; a group consisting of t tuples with b blocks each with s slots now have 􏰀 st 􏰁 many blocks completely filled, one block filled from beginning to the (t mods)-th slot, and all others empty. The DBMS first sorts the blocks by the number of empty slots and then fills the empty slots from earlier blocks with tuples from later blocks one-by-one.
 
-We measure the efficiency of our algorithm by the number of movements it performs; each movement can trigger index updates, which have performance implications. We show that the above algorithm is at most (t mods) movements worse than optimal. It selects a block set F to be the 􏰀 st 􏰁 blocks that are filled in the final state and a block p that is partially filled and hold t mod s tuples. The rest of the blocks, E, are left empty. It then fills all gaps within F ∪ {p} using tuples from E ∪ {p}, and reorder tuples within p to
-
+We measure the efficiency of our algorithm by the number of movements it performs; each movement can trigger index updates, which have performance implications. We show that the above algorithm is at most (t mods) movements worse than optimal. It selects a block set F to be the blocks that are filled in the final state and a block p that is partially filled and hold t mod s tuples. The rest of the blocks, E, are left empty. It then fills all gaps within F ∪ {p} using tuples from E ∪ {p}, and reorder tuples within p to
 make them contiguous.Let Gapf be the set of unfilled slots in a
 block f , Gapf′ be the set of unfilled slots in the first t mod s slots in
 a block f , Filledf be the set of filled slots in f , and Filledf′ be the
 set of filled slots not in the first t mod s slots in f . 
 
-Then, for any valid selection of F , p, and E, [omit math equation from this description]
+Then, for any valid selection of F , p, and E, 
+
+[omit math equation from this description]
+
 because there are only t tuples in total. Therefore, an optimal movement is any one-to-one movement between...g
 
 The algorithm constructs F by picking the blocks with the most filled slots. Every gap in F needs to be filled with one movement, and our selection of F results in fewer movements than any other choice. In the worst case, our chosen p, which is the block with the next most filled slots, is empty in the first (t mods) slots. The optimal one is filled, resulting in at most (t mods) movements from the optimal for our algorithm. To achieve the optimal solution, the algorithm needs to scan through the blocks to find an optimal p by trying every possible candidate. From our experiments in Sec. 6, we observe only a marginal reduction in movements, which does not justify the overhead.
