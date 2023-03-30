@@ -17,4 +17,8 @@ datafusion cli has the feature "explain analyze select"
 
 ### References
 
+https://www.youtube.com/watch?v=NVKujPxwSBA
+
+[Slides for Talk One](https://docs.google.com/presentation/d/1D3GDVas-8y0sA4c8EOgdCvEjVND4s2E7I6zfs67Y4j8/edit#slide=id.p)
+
 [How Query Engines Work](https://howqueryengineswork.com/)
