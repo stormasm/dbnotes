@@ -14,3 +14,7 @@ execution plan is also called physical plan or implementation
 clickbench benchmark suite
 
 datafusion cli has the feature "explain analyze select"
+
+### References
+
+[How Query Engines Work](https://howqueryengineswork.com/)
