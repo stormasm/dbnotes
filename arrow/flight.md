@@ -40,4 +40,4 @@ CommandPreparedStatementQuery
 
 [arrow.flight.protocol.rs](https://github.com/apache/arrow-rs/blob/master/arrow-flight/src/sql/arrow.flight.protocol.sql.rs)
 
-[Arrow Flight RPC](https://arrow.apache.org/docs/format/Flight.html)
+[arrow flight rpc](https://arrow.apache.org/docs/format/Flight.html)
