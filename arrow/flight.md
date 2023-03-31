@@ -33,3 +33,9 @@ ActionClosePreparedStatementRequest
 
 do_put_prepared_statement_query <->
 CommandPreparedStatementQuery
+
+### References
+
+[server.rs](https://github.com/apache/arrow-rs/blob/master/arrow-flight/src/sql/server.rs)
+
+[Arrow Flight RPC](https://arrow.apache.org/docs/format/Flight.html)
