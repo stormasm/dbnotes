@@ -1,4 +1,6 @@
 
+The DML (Data Manipulation Language) statements INSERT , UPDATE and DELETE are used to insert, update or delete data on the database respectively. The INSERT statement is used to add rows to a table.
+
 1) create the statement, get the schema and a handle
 
 do_action_create_prepared_statement <->
