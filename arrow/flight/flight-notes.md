@@ -7,14 +7,15 @@ Besides prepared what are the other choices / on first glance it looks like the 
 Is this correct ?
 
 >> the diagram is correct  
->> I made it so I could keep track of the underlying (messy) state of the world
-the JDBC driver always turns statements into prepared statements
+>> I made it so I could keep track of the underlying (messy) state of the world   
+>> the JDBC driver always turns statements into prepared statements
 
 what are the other choices if its not prepared at the top ?
 what could it be besides prepared ?
 
 >> in the JDBC driver code, there are two paths for PreparedStatement vs Statement  
->> but the calls to the server it makes are always as if it was trying to take the PreparedStatement path... I should rename it from flightsql.puml to jdbc.puml
+>> but the calls to the server it makes are always as if it was trying to take the PreparedStatement path   
+>> I should rename it from flightsql.puml to jdbc.puml
 
 So at the top when it asks the question Prepared? Yes / No
 The other choices could be Statement or Query ?
