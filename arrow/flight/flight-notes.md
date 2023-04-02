@@ -6,14 +6,14 @@ Besides prepared what are the other choices / on first glance it looks like the 
 
 Is this correct ?
 
->> the diagram is correct
+>> the diagram is correct  
 >> I made it so I could keep track of the underlying (messy) state of the world
 the JDBC driver always turns statements into prepared statements
 
 what are the other choices if its not prepared at the top ?
 what could it be besides prepared ?
 
->> in the JDBC driver code, there are two paths for PreparedStatement vs Statement
+>> in the JDBC driver code, there are two paths for PreparedStatement vs Statement  
 >> but the calls to the server it makes are always as if it was trying to take the PreparedStatement path... I should rename it from flightsql.puml to jdbc.puml
 
 So at the top when it asks the question Prepared? Yes / No
@@ -21,7 +21,7 @@ The other choices could be Statement or Query ?
 
 ### The key answer to the question is here
 
->> it can be prepared or not, and it can be an update or a query
+>> it can be prepared or not, and it can be an update or a query  
 >> and if it's prepared it can have params or not
 
 and and update is defined to be a Statement ?
@@ -39,9 +39,9 @@ In the UML diagram there are 3 choice boxes / Prepared / Query / params correct 
 
 what does params mean to you ?  what are examples of the params concept in the diagram ?
 
->> PTAL at the [tests](./ArrowFlightJdbcDriverTest.java)
->> in the comment in the [puml file](./flight-sql.png)
->> @startuml as observed by the JDBC driver in the real world, derived from tests above
+>> PTAL at the [tests](./ArrowFlightJdbcDriverTest.java)  
+>> in the comment in the [puml file](./flight-sql.png)  
+>> @startuml as observed by the JDBC driver in the real world, derived from tests above  
 >> that diagram is of the calls to the server resulting from each of those test cases (edited)
 
 Ok cool thanks...  I will take a look at all of the stuff you referenced and then see how I understand the params concept...
@@ -60,11 +60,11 @@ OK !  This is great / now I can spend some more time studying this stuff....
 
 Kind of amazing that there is really no spec for Flight / I have reviewed what is out there and basically there only real reference is the FlightSql.proto which doesn't really match up well with the Actions and Commands from a flow diagram point of view Trying to bridge that proto file to the real world is really a stretch for the practical mind
 
->> its hard to understand because it's built on Flight.proto
->> flight has a gRPC server. flight has endpoints/methods
->> but they are all DoPut and DoGet
->> so flightsql is just a bunch of custom do_put and do_get messages
->> and that makes it harder to read
+>> its hard to understand because it's built on Flight.proto   
+>> flight has a gRPC server. flight has endpoints/methods  
+>> but they are all DoPut and DoGet  
+>> so flightsql is just a bunch of custom do_put and do_get messages  
+>> and that makes it harder to read  
 >> i.e. the same message could mean different things if sent to do_get vs do_put
 
 ### References
