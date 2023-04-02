@@ -36,12 +36,42 @@ Me
 Ok I am being really dumb here but let me make sure I understand this...
 In the UML diagram there are 3 choice boxes / Prepared / Query / params correct ?
 
+>> yes
+
+what does params mean to you ?  what are examples of the params concept in the diagram ?
+
+>> PTAL at the [tests](./ArrowFlightJdbcDriverTest.java)
+>> in the comment in the [puml file](./flight-sql.png)
 
 
+>> @startuml as observed by the JDBC driver in the real world, derived from tests above
 
+>> that diagram is of the calls to the server resulting from each of those test cases (edited)
 
+Michael Angerman
+  24 hours ago
+Ok cool thanks...  I will take a look at all of the stuff you referenced and then see how I understand the params concept...
+Because I know what a PreparedStatement is and I know what a Query is / that seems pretty obvious to me / the thing I don't get is the params --- once I get that idea then the diagram will / should be more clear to me...
+In fact I will try and write that up and you can tell me if what I wrote seems correct
 
+>> String sql = "insert into person values ($1, $2)";
+>> $1 and $2 are params
 
+>> https://github.com/apache/arrow-rs/blob/4e7bb45050622d5b43505aa64dacf410cb329941/format/FlightSql.proto#L1440
+FlightSql.proto
+
+Thank you !!  Kindly....
+Wow.... This makes it much more clear....
+OK !  This is great / now I can spend some more time studying this stuff....
+
+Kind of amazing that there is really no spec for Flight / I have reviewed what is out there and basically there only real reference is the FlightSql.proto which doesn't really match up well with the Actions and Commands from a flow diagram point of view Trying to bridge that proto file to the real world is really a stretch for the practical mind
+
+>> its hard to understand because it's built on Flight.proto
+>> flight has a gRPC server. flight has endpoints/methods
+>> but they are all DoPut and DoGet
+>> so flightsql is just a bunch of custom do_put and do_get messages
+>> and that makes it harder to read
+>> i.e. the same message could mean different things if sent to do_get vs do_put
 
 ### References
 
