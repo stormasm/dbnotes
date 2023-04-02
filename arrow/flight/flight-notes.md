@@ -7,7 +7,6 @@ Besides prepared what are the other choices / on first glance it looks like the 
 Is this correct ?
 
 >> the diagram is correct
-
 >> I made it so I could keep track of the underlying (messy) state of the world
 the JDBC driver always turns statements into prepared statements
 
