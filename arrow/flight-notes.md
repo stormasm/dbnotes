@@ -23,7 +23,7 @@ The other choices could be Statement or Query ?
 ### The key answer to the question is here
 
 >> it can be prepared or not, and it can be an update or a query
->> and if it's prepared it can have params or not (edited)
+>> and if it's prepared it can have params or not
 
 and and update is defined to be a Statement ?g
 >> no
