@@ -67,10 +67,15 @@ OK !  This is great / now I can spend some more time studying this stuff....
 Kind of amazing that there is really no spec for Flight / I have reviewed what is out there and basically there only real reference is the FlightSql.proto which doesn't really match up well with the Actions and Commands from a flow diagram point of view Trying to bridge that proto file to the real world is really a stretch for the practical mind
 
 >> its hard to understand because it's built on Flight.proto
+
 >> flight has a gRPC server. flight has endpoints/methods
+
 >> but they are all DoPut and DoGet
+
 >> so flightsql is just a bunch of custom do_put and do_get messages
+
 >> and that makes it harder to read
+
 >> i.e. the same message could mean different things if sent to do_get vs do_put
 
 ### References
