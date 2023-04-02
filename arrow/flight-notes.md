@@ -24,30 +24,23 @@ Me
 So at the top when it asks the question Prepared? Yes / No
 The other choices could be Statement or Query ?
 
-Not me
-  12:38 PM
-### it can be prepared or not, and it can be an update or a query
-12:38
-### and if it's prepared it can have params or not (edited)
+### The key answer to the question is here
 
-* Michael Angerman
+>> it can be prepared or not, and it can be an update or a query
+>> and if it's prepared it can have params or not (edited)
+
+* Me
 and and update is defined to be a Statement ?
 
-* Not me
-no
+>> no
 
 
-Michael Angerman
-  12:39 PM
+Me
 and not a prepared statement ?
 
+>> both Statement and PreparedStatement have both executeQuery and executeUpdate
 
-Brent Gardner
-  12:39 PM
-both Statement and PreparedStatement have both executeQuery and executeUpdate
-12:40
-https://docs.oracle.com/javase/7/docs/api/java/sql/Statement.html#executeQuery(java.lang.String)
-https://docs.oracle.com/javase/7/docs/api/java/sql/Statement.html#executeUpdate(java.lang.String)
+
 
 
 Michael Angerman
@@ -60,7 +53,9 @@ In the UML diagram there are 3 choice boxes / Prepared / Query / params correct 
 Last reply 22 hours agoView thread
 
 
-Brent Gardner
-  12:41 PM
-https://docs.oracle.com/javase/7/docs/api/java/sql/PreparedStatement.html#executeQuery()
-https://docs.oracle.com/javase/7/docs/api/java/sql/PreparedStatement.html#executeUpdate()
+### References
+
+* [Ref 01](https://docs.oracle.com/javase/7/docs/api/java/sql/Statement.html#executeQuery-java.lang.String)
+* [Ref02](https://docs.oracle.com/javase/7/docs/api/java/sql/Statement.html#executeUpdate-java.lang.String)
+* [Ref 03](https://docs.oracle.com/javase/7/docs/api/java/sql/PreparedStatement.html#executeQuery())
+* [Ref 04](https://docs.oracle.com/javase/7/docs/api/java/sql/PreparedStatement.html#executeUpdate())
