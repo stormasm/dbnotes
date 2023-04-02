@@ -31,20 +31,13 @@ The other choices could be Statement or Query ?
 
 * Me
 and and update is defined to be a Statement ?
-
 >> no
-
 
 Me
 and not a prepared statement ?
-
 >> both Statement and PreparedStatement have both executeQuery and executeUpdate
 
-
-
-
-Michael Angerman
-  12:41 PM
+Me
 Ok I am being really dumb here but let me make sure I understand this...
 In the UML diagram there are 3 choice boxes / Prepared / Query / params correct ?
 
