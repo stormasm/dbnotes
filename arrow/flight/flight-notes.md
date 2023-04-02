@@ -49,8 +49,7 @@ Ok cool thanks...  I will take a look at all of the stuff you referenced and the
 >> String sql = "insert into person values ($1, $2)";  
 >> $1 and $2 are params
 
->> https://github.com/apache/arrow-rs/blob/4e7bb45050622d5b43505aa64dacf410cb329941/format/FlightSql.proto#L1440
-FlightSql.proto
+* [FlightSql.proto](https://github.com/apache/arrow-rs/blob/4e7bb45050622d5b43505aa64dacf410cb329941/format/FlightSql.proto#L1440)
 
 Thank you !!  Kindly....
 Wow.... This makes it much more clear....
