@@ -39,8 +39,8 @@ what does params mean to you ?  what are examples of the params concept in the d
 
 >> PTAL at the [tests](./ArrowFlightJdbcDriverTest.java)  
 >> in the comment in the [puml file](./flight-sql.png)  
->> @startuml as observed by the JDBC driver in the real world, derived from tests above  
->> that diagram is of the calls to the server resulting from each of those test cases (edited)
+>> as observed by the JDBC driver in the real world, derived from tests above  
+>> that diagram is all of the calls to the server resulting from each of those test cases
 
 Ok cool thanks...  I will take a look at all of the stuff you referenced and then see how I understand the params concept... Because I know what a PreparedStatement is and I know what a Query is / that seems pretty obvious to me / the thing I don't get is the params --- once I get that idea then the diagram will / should be more clear to me... In fact I will try and write that up and you can tell me if what I wrote seems correct
 
