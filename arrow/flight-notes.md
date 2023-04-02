@@ -11,16 +11,12 @@ Is this correct ?
 >> I made it so I could keep track of the underlying (messy) state of the world
 the JDBC driver always turns statements into prepared statements
 
-Me
 what are the other choices if its not prepared at the top ?
 what could it be besides prepared ?
 
-Other person
-in the JDBC driver code, there are two paths for PreparedStatement vs Statement
-but the calls to the server it makes are always as if it was trying to take the PreparedStatement path... I should rename it from flightsql.puml to jdbc.puml
+>> in the JDBC driver code, there are two paths for PreparedStatement vs Statement
+>> but the calls to the server it makes are always as if it was trying to take the PreparedStatement path... I should rename it from flightsql.puml to jdbc.puml
 
-
-Me
 So at the top when it asks the question Prepared? Yes / No
 The other choices could be Statement or Query ?
 
@@ -29,8 +25,7 @@ The other choices could be Statement or Query ?
 >> it can be prepared or not, and it can be an update or a query
 >> and if it's prepared it can have params or not (edited)
 
-* Me
-and and update is defined to be a Statement ?
+and and update is defined to be a Statement ?g
 >> no
 
 Me
