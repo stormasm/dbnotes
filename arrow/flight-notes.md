@@ -25,7 +25,7 @@ The other choices could be Statement or Query ?
 >> it can be prepared or not, and it can be an update or a query
 >> and if it's prepared it can have params or not
 
-and and update is defined to be a Statement ?g
+and and update is defined to be a Statement ?
 >> no
 
 Me
@@ -37,8 +37,10 @@ Ok I am being really dumb here but let me make sure I understand this...
 In the UML diagram there are 3 choice boxes / Prepared / Query / params correct ?
 
 
-22 replies
-Last reply 22 hours agoView thread
+
+
+
+
 
 
 ### References
