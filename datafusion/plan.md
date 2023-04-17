@@ -1,4 +1,8 @@
 
+### TableProvider
+
+[/core/src/datasource/datasource.rs](https://docs.rs/datafusion/latest/datafusion/datasource/datasource/trait.TableProvider.html)
+
 ### A planner used to add extensions to DataFusion logical and physical plans.
 ```rust
 #[async_trait]
