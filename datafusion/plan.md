@@ -14,7 +14,7 @@ pub trait QueryPlanner {
 
 [/core/src/execution/context.rs](https://docs.rs/datafusion/latest/datafusion/execution/context/trait.QueryPlanner.html#tymethod.create_physical_plan)
 
----
+--------
 
 ### ex04.rs: select a, b from example order by b desc
 
