@@ -1,8 +1,5 @@
 
-
-### /core/src/execution/context.rs
-
-/// A planner used to add extensions to DataFusion logical and physical plans.
+### A planner used to add extensions to DataFusion logical and physical plans.
 ```rust
 #[async_trait]
 pub trait QueryPlanner {
@@ -15,7 +12,9 @@ pub trait QueryPlanner {
 }
 ```
 
-[api ref](https://docs.rs/datafusion/latest/datafusion/execution/context/trait.QueryPlanner.html#tymethod.create_physical_plan)
+[/core/src/execution/context.rs](https://docs.rs/datafusion/latest/datafusion/execution/context/trait.QueryPlanner.html#tymethod.create_physical_plan)
+
+---
 
 ### ex04.rs: select a, b from example order by b desc
 
