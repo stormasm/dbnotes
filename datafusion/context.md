@@ -1,4 +1,8 @@
 
+This is where the final register_table on SchemaProvidier happens.
+
+[SchemaProvider](https://docs.rs/datafusion/latest/datafusion/catalog/schema/index.html)
+
 [execution::context](https://docs.rs/datafusion/latest/datafusion/execution/context/index.html)
 
 [SessionContext](https://docs.rs/datafusion/latest/datafusion/execution/context/struct.SessionContext.html#)

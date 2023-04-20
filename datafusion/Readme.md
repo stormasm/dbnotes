@@ -1,4 +1,6 @@
 
+[Read this first continually...](https://docs.rs/datafusion/latest/datafusion/index.html)
+
 ### Code Flows
 
 * [LogicalPlan](https://github.com/stormasm/dbnotes/blob/main/datafusion/codeflows.md#logical-plan)
