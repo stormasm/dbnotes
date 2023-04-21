@@ -1,4 +1,6 @@
 
+[testing hints](https://github.com/stormasm/rust-notes/blob/main/testing.md)
+
 /core/tests/tpcds_planning.rs
 
 go to line 1044 to review how the code works
