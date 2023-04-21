@@ -1,6 +1,10 @@
 
 [testing hints](https://github.com/stormasm/rust-notes/blob/main/testing.md)
 
+```rust
+ct --test tpcds_planning tpcds_physical_q98
+```
+
 /core/tests/tpcds_planning.rs
 
 go to line 1044 to review how the code works
