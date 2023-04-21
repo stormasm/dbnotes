@@ -1,4 +1,8 @@
 
+/core/tests/tpcds_planning.rs
+
+go to line 1044 to review how the code works
+
 This is where the final register_table on SchemaProvidier happens.
 
 [SchemaProvider](https://docs.rs/datafusion/latest/datafusion/catalog/schema/index.html)
