@@ -9,7 +9,7 @@ ct --test tpcds_planning tpcds_physical_q98
 
 go to line 1044 to review how the code works
 
-This is where the final register_table on SchemaProvidier happens.
+This is where the final register_table on SchemaProvider happens.
 
 [SchemaProvider](https://docs.rs/datafusion/latest/datafusion/catalog/schema/index.html)
 
