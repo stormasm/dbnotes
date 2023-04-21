@@ -1,4 +1,10 @@
 
+### To build the server
+
+```rust
+cargo build
+```
+
 ### To test the server
 
 ```rust
