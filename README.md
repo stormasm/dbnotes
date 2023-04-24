@@ -3,7 +3,7 @@
 
 ### Issues
 
-* [How do you get loopback addresses other than 127.0.0.1 to work on OS X](https://superuser.com/questions/458875/how-do-you-get-loopback-addresses-other-than-127-0-0-1-to-work-on-os-x)
+* [how do you get loopback addresses other than 127.0.0.1 to work on mac](https://superuser.com/questions/458875/how-do-you-get-loopback-addresses-other-than-127-0-0-1-to-work-on-os-x)
 
 ### Legacy Folder
 
