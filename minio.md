@@ -42,10 +42,10 @@ EXAMPLES:
   1. Start MinIO server on "/home/shared" directory.
      $ minio server /home/shared
 
-  2. Start single node server with 64 local drives "/mnt/data1" to "/mnt/data64".
+  2. Start single node server with 64 local drives "/mnt/data1" to    "/mnt/data64".
      $ minio server /mnt/data{1...64}
 
-  3. Start distributed MinIO server on an 32 node setup with 32 drives each, run following command on all the nodes
+  3. Start distributed MinIO server on an 32 node setup with 32 drives each,   run following command on all the nodes
      $ minio server http://node{1...32}.example.com/mnt/export{1...32}
 
   4. Start distributed MinIO server in an expanded setup, run the following command on all the nodes
