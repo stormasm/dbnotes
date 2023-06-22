@@ -7,7 +7,8 @@ Everything starts out with
 Raft::new
 ```
 
-which calls into *openraft/src/raft.rs*.  From here you can dive down
-further to see what is going on...
+which is located in *openraft/src/raft.rs*.  
+
+From here you can dive down further to see what is going on...
 
 * src/core/raft_core.rs
