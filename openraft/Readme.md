@@ -1,17 +1,10 @@
 
-
-* [storage/mod.rs](https://github.com/datafuselabs/openraft/blob/main/openraft/src/storage/mod.rs)
+All of the main config values for raft including
 
 ```rust
-#[async_trait]
-pub trait RaftLogReader<C>: Send + Sync + 'static
-where C: RaftTypeConfig
-
-#[async_trait]
-pub trait RaftSnapshotBuilder<C>: Send + Sync + 'static
-where C: RaftTypeConfig
-
-#[async_trait]
-pub trait RaftStorage<C>: RaftLogReader<C> + Send + Sync + 'static
-where C: RaftTypeConfig
+/// The heartbeat interval in milliseconds at which leaders will send heartbeats to followers
+ #[clap(long, default_value = "50")]
+ pub heartbeat_interval: u64,
 ```
+
+is located in *openraft/src/config/config.rs*
