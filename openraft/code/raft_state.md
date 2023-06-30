@@ -13,3 +13,57 @@ snapshot_streaming: None,
 purge_upto: None
 }
 ```
+
+#### raft_state/mod.rs
+
+```rust
+/// A struct used to represent the raft state which a Raft node needs.
+#[derive(Clone, Debug)]
+#[derive(PartialEq, Eq)]
+pub struct RaftState<NID, N, I>
+where
+    NID: NodeId,
+    N: Node,
+    I: Instant,
+{
+    /// The vote state of this node.
+    pub(crate) vote: UTime<Vote<NID>, I>,
+
+    /// The LogId of the last log committed(AKA applied) to the state machine.
+    ///
+    /// - Committed means: a log that is replicated to a quorum of the cluster and it is of the term
+    ///   of the leader.
+    ///
+    /// - A quorum could be a uniform quorum or joint quorum.
+    pub committed: Option<LogId<NID>>,
+
+    pub(crate) purged_next: u64,
+
+    /// All log ids this node has.
+    pub log_ids: LogIdList<NID>,
+
+    /// The latest cluster membership configuration found, in log or in state machine.
+    pub membership_state: MembershipState<NID, N>,
+
+    /// The metadata of the last snapshot.
+    pub snapshot_meta: SnapshotMeta<NID, N>,
+
+    // --
+    // -- volatile fields: they are not persisted.
+    // --
+    /// The state of a Raft node, such as Leader or Follower.
+    pub server_state: ServerState,
+
+    pub(crate) accepted: Accepted<NID>,
+
+    pub(crate) io_state: IOState<NID>,
+
+    pub(crate) snapshot_streaming: Option<StreamingState>,
+
+    /// The log id upto which the next time it purges.
+    ///
+    /// If a log is in use by a replication task, the purge is postponed and is stored in this
+    /// field.
+    pub(crate) purge_upto: Option<LogId<NID>>,
+}
+```
