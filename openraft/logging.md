@@ -8,6 +8,7 @@ logt
 loglevel
 ```
 
+you can either set the loglevel to *info* or *debug* and you will see different stuff
 once you set the loglevel to debug which is the level for the test
 
 [t10_initialization](https://github.com/datafuselabs/openraft/blob/main/tests/tests/life_cycle/t10_initialization.rs)
@@ -16,4 +17,10 @@ then the log file gets written to the
 
 ```rust
 tests/_log directory
+```
+
+to run a particular test
+
+```rust
+ctno t10_initialization
 ```
