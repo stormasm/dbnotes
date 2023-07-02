@@ -23,3 +23,6 @@ to run a particular test
 ```rust
 ctno t10_initialization
 ```
+
+For more details on how the tracing test code works in openraft:
+[fixtures/mod.rs](https://github.com/datafuselabs/openraft/blob/main/tests/tests/fixtures/mod.rs)
