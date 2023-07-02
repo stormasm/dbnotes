@@ -8,8 +8,7 @@ logt
 loglevel
 ```
 
-you can either set the loglevel to *info* or *debug* and you will see different stuff
-once you set the loglevel to debug which is the level for the test
+you can either set the loglevel to *info* or *debug* and you will see different stuff   
 
 [t10_initialization](https://github.com/datafuselabs/openraft/blob/main/tests/tests/life_cycle/t10_initialization.rs)
 
