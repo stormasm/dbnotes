@@ -1,5 +1,5 @@
 
-To get the filters up and running...
+To get the filters up and running in raft-kv-rocksdb...
 
 * in src/bin/main.rs
 
