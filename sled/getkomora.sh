@@ -14,3 +14,5 @@ git clone git@github.com:komora-io/inline-array.git
 git clone git@github.com:komora-io/pagetable.git
 # stack-map
 git clone git@github.com:komora-io/stack-map.git
+# sled
+git clone git@github.com:spacejam/sled.git
