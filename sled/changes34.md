@@ -67,6 +67,7 @@ Feel free to send in pull requests as changes evolve prior to 1.0 landing...
 cache-advisor
 concurrent-map
 ebr
+fault-injection
 inline-array
 pagetable
 stack-map
@@ -90,7 +91,7 @@ serde = { version = "1.0", features = ["derive"] }
 * stack-map = { version = "1.0.3", features = ["serde"] }
 zstd = "0.12.4"
 fnv = "1.0.7"
-fault-injection = "1.0.9"
+* fault-injection = "1.0.9"
 crossbeam-queue = "0.3.8"
 crossbeam-channel = "0.5.8"
 ```
