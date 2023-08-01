@@ -3,7 +3,7 @@
 
 The following src code changes are fairly dramatic as you can see below.  
 
-The src directory is dramatically reduced and in its place six (6) new Komora crates have
+The src directory is dramatically reduced and in its place seven (7) new Komora crates have
 been added !
 
 I am attempting to document the high level global changes at the crate level along
