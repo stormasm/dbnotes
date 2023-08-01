@@ -1,17 +1,18 @@
 
-### Shows changes between 34.7 and 1.0
+### Src changes between 34.7 and 1.0
 
 [start here](https://github.com/spacejam/sled/commit/3d4c6a7c400ea8b4e696f16cff836e0c27e8df45)
 
 
 |name |status |
 |-|-|
+| alloc | added |
 | atomic_shim | gone |
 | backoff | gone |     
 | batch | modified |       
 | cache_padded | gone |
 | concurrency_control | gone |
-| config | gone |
+| config | modified |
 | context | gone |
 | db | modified |
 | debug-delay | gone |
@@ -23,6 +24,7 @@
 | flush_epoch | modified |
 | flusher | gone |
 | fnv | gone |
+| heap | added |
 | histogram | gone |
 | iter | gone |
 | ivec | gone |
@@ -30,6 +32,7 @@
 | lib | modified |
 | lru | gone |
 | meta | gone |
+| metadata_store | added |
 | metrics | gone |
 | node | gone |
 | oneshot | gone |
