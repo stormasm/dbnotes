@@ -15,3 +15,16 @@ async fn main() -> std::io::Result<()> {
         .with_env_filter("openraft::engine::engine_impl=info")
         .init();
 ```
+
+### With less stuff including no time stamps
+
+```rust
+#[async_std::main]
+async fn main() -> std::io::Result<()> {
+    // Setup the logger
+    tracing_subscriber::fmt()
+        .without_time()
+        .with_ansi(false)
+        .with_env_filter("openraft::engine::engine_impl=info")
+        .init();
+```
