@@ -97,3 +97,7 @@ crossbeam-channel = "0.5.8"
 ```
 
 * starred repos are part of the komora-io project
+
+### References
+
+[spacejam discord note announcing sled 1.0](https://discord.com/channels/509773073294295082/509773073294295084/1134466317567660083)
