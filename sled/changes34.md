@@ -1,8 +1,9 @@
 
 ## Update on Sled moving to 1.0
 
-The following src code changes are fairly dramatic as you can see below.  The src
-directory is dramatically reduced and in its place six (6) new Komora crates have
+The following src code changes are fairly dramatic as you can see below.  
+
+The src directory is dramatically reduced and in its place six (6) new Komora crates have
 been added !
 
 I am attempting to document the high level global changes at the crate level along
@@ -13,7 +14,6 @@ Feel free to send in pull requests as changes evolve prior to 1.0 landing...
 ### Src changes between 34.7 and 1.0
 
 [start here](https://github.com/spacejam/sled/commit/3d4c6a7c400ea8b4e696f16cff836e0c27e8df45)
-
 
 |name |status |
 |-|-|
