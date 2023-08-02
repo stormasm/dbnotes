@@ -6,6 +6,10 @@ in src/lib.rs at line 97
 [remove unused_qualifications](https://github.com/spacejam/sled/blob/main/src/lib.rs#L97)
 
 ```rust
+ctt test_tree create_tree --features=testing
+```
+
+```rust
 ctt test_log --features=testing
 ```
 
