@@ -7,5 +7,8 @@ in src/lib.rs at line 97
 
 ```rust
 ctt test_log --features=testing
+```
+
+```rust
 cargo test --test test_log --features=testing
 ```
