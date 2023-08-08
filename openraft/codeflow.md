@@ -15,5 +15,6 @@ From here you can dive down further to see what is going on...
 
 ### append_to_log
 
-append_to_log is called in
+append_to_log is called in the
 [storage/adapter](https://github.com/datafuselabs/openraft/blob/main/openraft/src/storage/adapter.rs)
+in the append method.
