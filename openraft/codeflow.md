@@ -7,7 +7,7 @@ Everything starts out with
 Raft::new
 ```
 
-which is located in *openraft/src/raft.rs*
+which is located in *openraft/src/raft/mod.rs*
 
 From here you can dive down further to see what is going on...
 
