@@ -9,9 +9,16 @@ rg Raft::new
 
 which is located in *openraft/src/raft/mod.rs*
 
-From here you can dive down further to see what is going on...
+Then next this is where the runtime spawns a thread
 
-* src/core/raft_core.rs
+```rust
+let core_handle = C::AsyncRuntime::spawn(core.main(rx_shutdown).instrument(trace_span!("spawn").or_current()));
+```
+
+From this file: *src/core/raft_core.rs* is located
+
+* main
+* do_main
 
 ### append_to_log
 
