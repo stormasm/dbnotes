@@ -19,6 +19,7 @@ From this file: *src/core/raft_core.rs* is located
 
 * main
 * do_main
+* runtime_loop
 
 ### append_to_log
 
