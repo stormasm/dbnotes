@@ -4,7 +4,7 @@ This is the codeflow from the top level of Raft.
 Everything starts out with
 
 ```rust
-Raft::new
+rg Raft::new
 ```
 
 which is located in *openraft/src/raft/mod.rs*
