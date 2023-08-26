@@ -1,9 +1,4 @@
 
-
-* [discord 7/28/23](https://discord.com/channels/509773073294295082/509773073294295084/1134466317567660083)
-
-hey folks 🙂 after a few years of kind of intense experimentation in isolation, the first extremely-rough cut for the storage engine of 1.0 is ready for testing. This first alpha intentionally has very few features, and the documentation is not yet in place, and the api will change before 1.0.0 final, but if you'd like to play around with the basic API, I've just released https://docs.rs/sled/1.0.0-alpha.1 🙂 This weekend I'm going to be adding most of the existing sled features, although transactions and subscription might lag a little more as I think about them more. Windows support should come later today.
-
 * [discord 8/26/23](https://discord.com/channels/509773073294295082/630073320825552966/1144994172336611379)
 
 Hey folks, I've just released a new alpha version, 117, that has some big changes[1] to how certain things related to durability are handled, while implementing support for tree nodes to be merged into their siblings when they become empty, so that the system will be able to scale down resource use when data is removed over time. I haven't done comparative performance checks yet against the last release, and would be grateful if anyone hits problems to talk about them here and ideally include a reproduction test.
@@ -13,3 +8,7 @@ A (potentially, if you set these yourself instead of relying on the default) bre
 Now that tree nodes can be merged, one of the next alpha releases will include support for actually reclaiming heap file data as well, but I wanted to keep high-level leaf merging separate from low-level storage compaction to simplify debugging if issues are uncovered.
 
 https://github.com/spacejam/sled/pull/1459/files
+
+* [discord 7/28/23](https://discord.com/channels/509773073294295082/509773073294295084/1134466317567660083)
+
+hey folks 🙂 after a few years of kind of intense experimentation in isolation, the first extremely-rough cut for the storage engine of 1.0 is ready for testing. This first alpha intentionally has very few features, and the documentation is not yet in place, and the api will change before 1.0.0 final, but if you'd like to play around with the basic API, I've just released https://docs.rs/sled/1.0.0-alpha.1 🙂 This weekend I'm going to be adding most of the existing sled features, although transactions and subscription might lag a little more as I think about them more. Windows support should come later today.
