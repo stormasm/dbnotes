@@ -1,4 +1,7 @@
 
+
+Maybe the one crate I've spent the most time on is concurrent-map, which is used as the new in-memory sled index and it's a lock-free B+ tree that was adapted from the original sled index but with a few nice complexity reductions.
+
 * [discord 8/26/23](https://discord.com/channels/509773073294295082/630073320825552966/1144994172336611379)
 
 Hey folks, I've just released a new alpha version, 117, that has some big changes[1] to how certain things related to durability are handled, while implementing support for tree nodes to be merged into their siblings when they become empty, so that the system will be able to scale down resource use when data is removed over time. I haven't done comparative performance checks yet against the last release, and would be grateful if anyone hits problems to talk about them here and ideally include a reproduction test.
