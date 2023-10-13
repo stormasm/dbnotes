@@ -17,3 +17,7 @@ glaredb --verbose 2 --log-mode full server
 are located
 
 * or you can hard code the exact location of the glaredb binary
+
+### Reference PRs
+
+* [Enable passing sql script as an argument](https://github.com/GlareDB/glaredb/pull/1913)
