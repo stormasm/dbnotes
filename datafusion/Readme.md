@@ -1,4 +1,9 @@
 
+### Some notes on tpch testing
+
+* [Andrew Lamb Issue 7949](https://github.com/apache/arrow-datafusion/issues/7949)
+* [Slack Ref](https://the-asf.slack.com/archives/C01QUFS30TD/p1698418490366659)
+
 [Read this first continually...](https://docs.rs/datafusion/latest/datafusion/index.html)
 
 ### Recent Activiy
