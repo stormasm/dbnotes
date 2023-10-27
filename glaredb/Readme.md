@@ -10,6 +10,10 @@ RUST_LOG=trace
 glaredb --verbose 2 --log-mode full local
 glaredb --verbose 2 --log-mode full server
 ```
+---
+```sh
+psql "host=localhost user=glaredb dbname=glaredb port=6543"
+```
 
 ### Notes on how to run the scripts in this repo
 
