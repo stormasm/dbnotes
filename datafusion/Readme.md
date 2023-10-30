@@ -1,7 +1,7 @@
 
 ### how to call async method from method that is not async
 
-Hi there. I have an async method that returns a *SendableRecordBatchStream* .   
+Mr Travolta:: I have an async method that returns a *SendableRecordBatchStream*     
 How can I call it from the *ExecutionPlan::execute()*  method since its not async?
 
 Raphael Taylor-Davies::
