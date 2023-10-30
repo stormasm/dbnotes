@@ -1,4 +1,23 @@
 
+### how to call async method from method that is not async
+
+Hi there. I have an async method that returns a SendableRecordBatchStream .
+How can I call it from the ExecutionPlan::execute()  method since its not async?
+
+Raphael Taylor-Davies
+futures::stream::once is your friend
+
+Raphael Taylor-Davies
+Followed by flatten or try_flatten
+
+Mr Travolta
+Thanks. That worked.
+
+Andrew Lamb
+Anyone want to volunteer to add that hint to the documentation of ExecutionPlan::execute() ?
+it seems to have come up a few times.
+
+
 ### Some notes on tpch testing
 
 * [Andrew Lamb Issue 7949](https://github.com/apache/arrow-datafusion/issues/7949)
